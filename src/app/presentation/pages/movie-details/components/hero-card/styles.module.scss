@@ -1,0 +1,110 @@
+.rootContainer {
+  margin-top: 42px;
+  background: #f2f2f2;
+}
+
+.header {
+  padding: 12px 32px;
+
+  background: #e6e6e6;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: #116193;
+
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: 'Abel', sans-serif;
+}
+
+.date {
+  color: #a0a0a0;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+.infoContainer {
+  flex: 5;
+  padding: 24px;
+}
+
+.infoTitle {
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+
+  font-family: 'Lato';
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  color: #116193;
+  border-bottom: #05e1e0 solid 1px;
+}
+
+.description {
+  margin-bottom: 48px;
+
+  font-family: 'Lato';
+  font-size: 1rem;
+  font-weight: 300;
+
+  color: #000000;
+}
+
+.miscContainer {
+  padding: 48px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.genreContainer {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  & > * {
+    margin-right: 8px;
+  }
+}
+
+.scoreContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imageContainer {
+  flex: 2;
+  position: relative;
+  aspect-ratio: 5 / 7;
+}
+
+@media (max-width: 700px) {
+  .imageContainer {
+    display: none;
+  }
+
+  .genreContainer {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    & > * {
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+  }
+}

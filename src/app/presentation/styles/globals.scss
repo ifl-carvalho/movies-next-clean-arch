@@ -1,0 +1,36 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  list-style-type: none;
+  font-family: 'Lato', 'Abel', sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+input {
+  all: unset;
+}
+
+button:active {
+  outline: none;
+  background: transparent;
+  border: 1px solid grey;
+}

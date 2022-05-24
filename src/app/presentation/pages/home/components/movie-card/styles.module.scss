@@ -1,0 +1,100 @@
+.rootContainer {
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  cursor: pointer;
+  background: #ebebeb;
+  box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.45);
+}
+
+.imageContainer {
+  flex: 1;
+  min-width: 200px;
+  max-width: 200px;
+  position: relative;
+}
+
+.infoContainer {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.scoreContainer {
+  position: absolute;
+  top: 20px;
+  left: 12px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.title {
+  padding-top: 16px;
+  padding-left: 92px;
+  color: #00e1e0;
+  background: #116193;
+
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: 'Abel', sans-serif;
+
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.date {
+  padding-left: 92px;
+  margin-top: 6px;
+  color: #a0a0a0;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.description {
+  padding: 24px;
+  color: #a0a0a0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 24px;
+  overflow-x: auto;
+
+  & > :not(:first-child) {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .rootContainer {
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    display: none;
+  }
+}
