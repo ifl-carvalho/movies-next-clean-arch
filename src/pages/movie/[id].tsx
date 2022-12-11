@@ -10,7 +10,7 @@ const getMovieById = makeGetMovieById()
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [{ params: { id: '1' } }],
+    paths: [{ params: { id: '1057077' } }],
     fallback: 'blocking'
   }
 }
